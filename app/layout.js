@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant_Upright, Open_Sans} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const cromorant_upright = Cormorant_Upright({
+  subsets: ["latin"], 
+  weight:["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant-upright",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const open_sans = Open_Sans({
+  subsets: ["latin"], 
+  weight:["300", "400", "500", "600", "700", "800"],
+  variable: "--font-open_sans",
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cromorant_upright.variable} ${open_sans} `}
       >
         {children}
       </body>

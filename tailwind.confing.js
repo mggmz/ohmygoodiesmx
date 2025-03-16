@@ -19,6 +19,11 @@ module.exports = {
             md:"768px",
             lg:"960px",
             xl:"1430px",
-        }
-    }
+        },
+        fontFamily:{},
+        extend:{
+            backgroundImage:{},
+        },
+    },
+    plugins:[],
 };
