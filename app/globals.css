@@ -1,11 +1,9 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
-@import "tailwindcss/components";
 @import "tailwindcss/base";
-
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
     body {
-    @apply font-secondary text-secondary leading-relaxed;
-}
+        @apply font-secondary text-secondary leading-relaxed;
+    }
 }
