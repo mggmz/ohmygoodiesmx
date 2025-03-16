@@ -20,10 +20,29 @@ module.exports = {
             lg:"960px",
             xl:"1430px",
         },
-        fontFamily:{},
+        fontFamily:{
+            primary:"var(--font-cormorant-upright)",
+            secondary:"var(--font-open-sans)",
+        },
         extend:{
-            backgroundImage:{},
+            colors:{
+                primary:{
+                    DEFAULT: "#787f8a"
+                },
+                secondary:{
+                    DEFAULT: "#f3f3f3",
+                },
+                accent: {
+                    DEFAULT: "#c7a17a",
+                    hover: "#a08161",
+                },
+            },
+            backgroundImage:{
+                'hero-overlay': "url('/assets/hero-overlay.png')",
+                opening_hours: "url('/assets/opening-hours/bg.png')",
+                footer: "url('/assets/footer/bg.png')",
+            },
         },
     },
-    plugins:[],
+    plugins: [],
 };
