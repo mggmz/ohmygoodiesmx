@@ -9,5 +9,16 @@ module.exports = {
         "./components/**/*.{js,jsx,ts,tsx,mdx}",
         "./app/**/*.{js,jsx,ts,tsx,mdx}",
     ],
-    // ...otras configuraciones...
+    theme:{
+        container:{
+            center:true,
+            padding:"15px",
+        },
+        screens:{
+            sm:"640px",
+            md:"768px",
+            lg:"960px",
+            xl:"1430px",
+        }
+    }
 };
